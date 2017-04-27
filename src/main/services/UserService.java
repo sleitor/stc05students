@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * Created by Троицкий Дмитрий on 20.04.2017.
  */
 
-@Service
+
 public class UserService implements UserServiceInterface{
 
     public UserInterface getUserDAO() {

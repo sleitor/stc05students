@@ -9,6 +9,7 @@ import java.sql.*;
 /**
  * Created by Троицкий Дмитрий on 20.04.2017.
  */
+
 public class UserDAO implements UserInterface {
     private UserDAO userInterface;
 
