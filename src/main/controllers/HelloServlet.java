@@ -19,14 +19,10 @@ import java.sql.Statement;
 public class HelloServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //resp.getWriter().println("lalalala");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher( "/login.jsp" );
 
-
         dispatcher.forward( req,resp ); //перенаправление
-
     }
-
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

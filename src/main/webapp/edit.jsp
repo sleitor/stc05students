@@ -17,6 +17,7 @@
 <body>
     <%--<c:if test="${action == 'edit' }"> <h2>Edit</h2> </c:if>--%>
     <c:if test="${requestScope.action == 'edit' }"> <h2>Edit</h2> </c:if>
+    <c:if test="${requestScope.action == 'add' }"> <h2>Add</h2> </c:if>
 
     <%--<%=request.getParameter( "id" )%> - <%=request.getParameter("action")%>--%>
 

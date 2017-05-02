@@ -1,5 +1,6 @@
 package main.controllers;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 import main.services.UserServiceInterface;
@@ -16,11 +17,7 @@ import java.io.IOException;
  */
 public class LoginServlet extends HttpServlet {
 
-//    static {
-//        PropertyConfigurator.configure( LoginServlet.class.getClassLoader().getResource( "log4g.properties" ) );
-//    }
-
-//    private static final Logger logger = Logger.getLogger( LoginServlet.class );
+    private static final Logger logger = Logger.getLogger( LoginServlet.class );
 
     @Autowired
     private UserServiceInterface userService;

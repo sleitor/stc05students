@@ -32,7 +32,7 @@ public class StudentDAO implements StudentInterface {
         }
     }
 
-    public Student read(int id) {
+    public Student read(long id) {
         Connection db = DataBaseConnector.initConnection();
 
         try {
@@ -46,7 +46,6 @@ public class StudentDAO implements StudentInterface {
         } catch(SQLException e) {
             e.printStackTrace();
         }
-
         return null;
     }
 
@@ -67,7 +66,22 @@ public class StudentDAO implements StudentInterface {
         }
     }
 
-    public void delete(Student student) {
+    public void delete(long id) {
+        Connection db = DataBaseConnector.initConnection();
+
+        try {
+            Statement statement = db.createStatement();
+            statement.execute( "DELETE FROM student WHERE id=" + id );
+
+            db.close();
+
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void deleteByStudent(Student student) {
         Connection db = DataBaseConnector.initConnection();
 
         try {

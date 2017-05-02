@@ -18,7 +18,7 @@ public class DataBaseConnector {
         }
 
         try {
-            connection = DriverManager.getConnection( "jdbc:mysql://sleitor.stc5.ru/students", "demo","q1w2e3r4" );
+            connection = DriverManager.getConnection( "jdbc:mysql://sleitor.stc5.ru/students", "demo","q1w2e3r45" );
         } catch(SQLException e) {
             e.printStackTrace();
         }
@@ -56,9 +56,7 @@ public class DataBaseConnector {
         } catch(SQLException e) {
             e.printStackTrace();
         }
-        finally {
 
-        }
         try {
             db.close();
         } catch(SQLException e) {

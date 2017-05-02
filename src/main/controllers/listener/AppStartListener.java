@@ -12,6 +12,7 @@ public class AppStartListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
  //       PropertyConfigurator.configure(  );
+//        PropertyConfigurator.configure(AppStartListener.class.getClassLoader().getResource(""));
     }
 
     @Override

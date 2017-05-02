@@ -27,7 +27,7 @@
             <th>Возраст</th>
             <th>Группа</th>
         </tr>
-        <c:forEach items="${requestScope.list}" var="student">
+        <c:forEach items="${list}" var="student">
 
             <tr>
                 <td><c:out value="${student.id}"></c:out></td>

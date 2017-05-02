@@ -13,13 +13,13 @@ public interface StudentInterface {
     public void create(Student group);
 
     /** Получает объект класса Student по ключу id */
-    public Student read(int id);
+    public Student read(long id);
 
     /** Сохраняет состояние объекта класса Student в БД */
     public void update(Student group);
 
     /** Создает новый объект класса Student */
-    public void delete(Student group);
+    public void delete(long id);
 
     /** Получаем все объекты класса Student из БД */
     public List<Student> getAll();

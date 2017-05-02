@@ -18,12 +18,12 @@ public class StudentService implements StudentServiceInterface {
         return studentDAO;
     }
 
-    @Autowired
+
     public void setStudentDAO(StudentInterface studentDAO) {
         this.studentDAO = studentDAO;
     }
 
-
+    @Autowired
     private StudentInterface studentDAO;
 
     @Override
@@ -32,7 +32,7 @@ public class StudentService implements StudentServiceInterface {
     }
 
     @Override
-    public Student read(int id) {
+    public Student read(long id) {
         return studentDAO.read( id );
     }
 
@@ -47,8 +47,8 @@ public class StudentService implements StudentServiceInterface {
     }
 
     @Override
-    public void delete(Student student) {
-        studentDAO.delete( student );
+    public void delete(long id) {
+        studentDAO.delete( id );
     }
 
     @Override
